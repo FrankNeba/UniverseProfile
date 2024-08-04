@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="flex md:flex-row flex-col bg-gray-300">
+      <div id="menu" class="lg:w-[24%] w-full lg:pb-0 pb-5 pt-9 px-9 border-2 border-slate-300 lg:flex flex-col absolute lg:relative hidden top-16 lg:top-0 -left-72 lg:-left-0 bg-white">
+        <h1 class="text-black text-4xl font-bold pb-11">
+          Uni<span class="text-red-500">verse</span>
+        </h1>
+        <div class="space-y-5 my-3">
+          <div class="flex flex-row py-3 px-4 w-full bg-gray-100 rounded-md">
+            <img src="./icons/download.png" alt="" />
+            <h1 class="text-xl">&nbsp&nbspHome</h1>
+          </div>
+
+          <div class="flex flex-row py-3 px-4 w-full rounded-md">
+            <img src="./icons/people.png" alt="" />
+            <h1 class="text-xl">&nbsp&nbspProfile</h1>
+          </div>
+
+          <div class="flex flex-row py-3 px-4 w-full rounded-md">
+            <img src="./icons/people.png" alt="" />
+            <div class="flex flex-col">
+              <h1 class="text-xl">&nbsp&nbspExplore</h1>
+              <h1 class="text-xl">&nbsp&nbspCommunities</h1>
+            </div>
+          </div>
+
+          <div class="flex flex-row py-3 px-4 w-full rounded-md">
+            <img src="./icons/settings.png" alt="" />
+            <h1 class="text-xl">&nbsp&nbspSettings</h1>
+          </div>
+        </div>
+
+        <hr class="border-y my-12" />
+        <div class="flex flex-row py-1 mb-4">
+          <h3 class="font-bold text-xl text-slate-700 pr-3">My Communities</h3>
+          <div
+            class="w-12 h-5 bg-red-500 rounded-full p-4 flex justify-center items-center text-white"
+          >
+            19
+          </div>
+        </div>
+
+        <div class="space-y-10">
+          <div class="flex flex-row">
+            <img src="./images/girl.png" alt="" />
+            <div
+              class="flex flex-col items-start justify-center px-3 text-gray-700"
+            >
+              <h4 class="font-medium">Web Development</h4>
+              <p class="text-sm">764 members</p>
+            </div>
+          </div>
+
+          <div class="flex flex-row">
+            <img src="./images/girl.png" alt="" />
+            <div
+              class="flex flex-col items-start justify-center px-3 text-gray-700"
+            >
+              <h4 class="font-medium">PHP Laravel</h4>
+              <p class="text-sm">480 members</p>
+            </div>
+          </div>
+
+          <div class="flex flex-row">
+            <img src="./images/girl.png" alt="" />
+            <div
+              class="flex flex-col items-start justify-center px-3 text-gray-700"
+            >
+              <h4 class="font-medium">Python Django</h4>
+              <p class="text-sm">540 members</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex justify-center">
+            <button
+          class="w-full md:w-1/4 lg:w-full flex justify-center items-center py-3 px-10 border-2 border-red-500 rounded-md mt-6 text-red-500 font-medium"
+        >
+          See All
+        </button>
+        </div>
+        
+      </div>
+
+      <div class="lg:w-[76%] w-full md:flex flex-col ">
+        <div
+          class="lg:w-[76%] w-full flex flex-row p-4    fixed top-0 right-0 bg-white"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="menuIcon" class="size-3 md:h-16 h-7 md:w-16 w-7 md:p-5 p-2 bg-gray-300  rounded-full lg:hidden left:0">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            <div class="w-full flex flex-row justify-end items-center space-x-4">
+
+                
+                
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-3 md:h-16 h-7 md:w-16 w-7 md:p-5 p-2 bg-gray-300  rounded-full"
+                >
+                    <path
+                    d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
+                    />
+                    <path
+                    d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
+                    />
+                </svg>
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-3 md:h-16 h-7 md:w-16 w-7 md:p-5 p-2 bg-gray-300  rounded-full"
+                >
+                    <path
+                    fill-rule="evenodd"
+                    d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                    clip-rule="evenodd"
+                    />
+                </svg>
+
+                <img src="./images/man.png" alt="" class="md:h-16 h-7 md:w-16 w-7" />
+            
+                <h3 class="font-medium">Foryoung Jonior</h3>
+                </div>
+            </div>
+
+        <div id="body" class=" flex md:flex-row flex-col lg:px-9  px-2 lg:pt-9 pt-3 pb-4 lg:space-x-3  bg-gray-300 h-full md:mt-24 mt-14">
+            <div class="flex flex-col rounded-lg bg-white h-full md:w-[60%] w-full p-6 space-y-3 lg:mr-8 md:mr-4">
+                <div class="flex flex-row space-x-2 font-medium">
+                <img src="./images/man.png" alt="" class="w-16 h-16"/>
+                <div class="py-3 flex flex-row space-x-3">
+                    <p>You</p>
+                    <p>></p>
+                    <p class="text-red-600">PHP Laravel</p>
+                </div>
+                </div>
+
+                <p class="font-medium">
+                    Top GitHub repositories to learn modern React development. Open source is great for many things. One of them is learning new skills. In this article, we'll look at some of the best Open Source React projects on GitHub that you can use to quickly boost your hands-on React learning and coding experience.
+                </p>
+
+                <img src="./images/bg.png" alt="">
+
+                <div class="flex flex-row text-xl font-medium space-x-1 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-red-500">
+                        <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                    <p> Joe, Shaan & 3 others like this</p>
+                </div>
+
+                <p class="text-red-500 text-xl font-medium">Comments</p>
+
+                <div class="flex flex-row p-2 space-x-2 bg-gray-100 rounded-md">
+                    <img src="./images/man.png" alt="" class="w-12 h-12">
+                    <div class="flex flex-col space-y-1">
+                        <p class="font-bold text-red-500 text-sm">Foryoung Junior</p>
+                        <p>Great article, thanks for sharing!</p>
+                        <div class="flex flex-row text-gray-400 space-x-3 text-sm">
+                            <p class="">32 likes</p>
+                            <button>like</button>
+                            <button>Reply</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="lg:w-2/3 xl:w-1/3 md:w-1/2 w-2/3 ml-20 flex flex-row p-2 space-x-2 bg-gray-100 rounded-md">
+                    <img src="./images/man.png" alt="" class="w-12 h-12">
+                    <div class="flex flex-col space-y-1">
+                        <p class="font-bold text-red-500 text-sm">Shaan Alam</p>
+                        <p>Great article, thanks for sharing!</p>
+                        <div class="flex flex-row text-gray-400 space-x-3 text-sm">
+                            <button>like</button>
+                            <button>Reply</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:w-1/3 md:w-[40%] w-full md:my-0 my-3 md:space-y-4 2xl:h-full ">
+                <div class="flex flex-col p-4 bg-white rounded-lg w-full md:my-0 my-3  ">
+                    <p class="text-red-600 font-medium mb-8">Based on Your Communities</p>
+                    
+                    <div class="flex flex-row items-center space-x-4">
+                        <img src="./images/man.png" alt="" class="w-16 h-16 p-2">
+                        <div class="flex flex-col w-1/3 ">
+                            <h4 class="font-medium ">Python Django</h4>
+                            <p class="text-xs text-gray-400">540 members</p>
+                        </div>
+        
+                        <div class="flex flex-col text-gray-400 justify-start items-end  w-1/3">
+                            <div class="flex flex-col text-gray-400">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </button>
+                                <p>Join</p>
+                            </div> 
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-row items-center space-x-4">
+                        <img src="./images/man.png" alt="" class="w-16 h-16 p-2">
+                        <div class="flex flex-col w-1/3 ">
+                            <h4 class="font-medium ">PHP Laravel</h4>
+                            <p class="text-xs text-gray-400">540 members</p>
+                        </div>
+        
+                        <div class="flex flex-col text-gray-400 justify-start items-end  w-1/3">
+                            <div class="flex flex-col text-gray-400">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </button>
+                                <p>Join</p>
+                            </div> 
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-row items-center space-x-4">
+                        <img src="./images/man.png" alt="" class="w-16 h-16 p-2">
+                        <div class="flex flex-col w-1/3 ">
+                            <h4 class="font-medium ">DevSecOps</h4>
+                            <p class="text-xs text-gray-400">540 members</p>
+                        </div>
+        
+                        <div class="flex flex-col text-gray-400 justify-start items-end  w-1/3">
+                            <div class="flex flex-col text-gray-400">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </button>
+                                <p>Join</p>
+                            </div> 
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-row items-center space-x-4">
+                        <img src="./images/man.png" alt="" class="w-16 h-16 p-2">
+                        <div class="flex flex-col w-1/3 ">
+                            <h4 class="font-medium ">DevSecOps</h4>
+                            <p class="text-xs text-gray-400">540 members</p>
+                        </div>
+        
+                        <div class="flex flex-col text-gray-400 justify-start items-end  w-1/3">
+                            <div class="flex flex-col text-gray-400">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </button>
+                                <p>Join</p>
+                            </div> 
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-row items-center space-x-4">
+                        <img src="./images/man.png" alt="" class="w-16 h-16 p-2">
+                        <div class="flex flex-col w-1/3 ">
+                            <h4 class="font-medium ">DevSecOps</h4>
+                            <p class="text-xs text-gray-400">540 members</p>
+                        </div>
+        
+                        <div class="flex flex-col text-gray-400 justify-start items-end  w-1/3">
+                            <div class="flex flex-col text-gray-400">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </button>
+                                <p>Join</p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex flex-col p-4 bg-white rounded-lg w-full space-y-1  lg:h-full">
+                    <p class="text-red-600 font-medium mb-8">People You May Know</p>
+                    
+                    <div class="flex flex-row items-center space-x-4">
+                        <img src="./images/man.png" alt="" class="w-16 h-16 p-2">
+                        <div class="flex flex-col w-1/3 ">
+                            <h4 class="font-medium ">Miles Morales</h4>
+                            <p class="text-xs text-gray-400">DevOps Engineer members</p>
+                        </div>
+        
+                        <div class="flex flex-col text-gray-400 justify-start items-end  w-1/3">
+                            <div class="flex flex-col text-gray-400">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </button>
+                                <p>Follow</p>
+                            </div> 
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-row items-center space-x-4">
+                        <img src="./images/man.png" alt="" class="w-16 h-16 p-2">
+                        <div class="flex flex-col w-1/3 ">
+                            <h4 class="font-medium ">Peter Parker</h4>
+                            <p class="text-xs text-gray-400">IT Manager members</p>
+                        </div>
+        
+                        <div class="flex flex-col text-gray-400 justify-start items-end  w-1/3">
+                            <div class="flex flex-col text-gray-400">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </button>
+                                <p>Follow</p>
+                            </div> 
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-row items-center space-x-4">
+                        <img src="./images/man.png" alt="" class="w-16 h-16 p-2">
+                        <div class="flex flex-col w-1/3 ">
+                            <h4 class="font-medium ">Gwen Stacy</h4>
+                            <p class="text-xs text-gray-400"> State Registered Nurse members</p>
+                        </div>
+        
+                        <div class="flex flex-col text-gray-400 justify-start items-end  w-1/3">
+                            <div class="flex flex-col text-gray-400">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </button>
+                                <p>Follow</p>
+                            </div> 
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-row items-center space-x-4">
+                        <img src="./images/man.png" alt="" class="w-16 h-16 p-2">
+                        <div class="flex flex-col w-1/3 ">
+                            <h4 class="font-medium ">Miles Morales</h4>
+                            <p class="text-xs text-gray-400">Penetration Tester members</p>
+                        </div>
+        
+                        <div class="flex flex-col text-gray-400 justify-start items-end  w-1/3">
+                            <div class="flex flex-col text-gray-400">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </button>
+                                <p>Follow</p>
+                            </div> 
+                        </div>
+                    </div>   
+                </div>
+            </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+
+
+</html>
